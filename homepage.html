@@ -102,6 +102,40 @@
 						<input type="search" class="form-control" id="search" placeholder="Search">
 					</div>
 				</div>
+				<!-- modal details user order, it hide default -->
+				<div id="modalDetails" class="modal fade" role="dialog">
+					<div class="modal-dialog">
+						<!-- modal content -->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+						        <h4 class="modal-title">Details Order</h4>
+							</div>
+							<div class="modal-body">
+								<!--  -->
+								 <div>
+								 	<p>User Name - <strong>4 phần</strong></p>
+								 </div>
+								 <!-- list product order -->
+								 <div>
+								 	<ul>
+								 		<li>Cơm tấm - 20000</li>
+								 		<li>Coca - 12000</li>
+								 		<li>Khoai tây - 25000</li>
+								 		<li>Cafe -- 15000</li>
+								 	</ul>
+								 </div>
+								 <div>
+								 	<p class="">Status : <span class="badge">delivering</span></p>
+								 </div>
+
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
 				<!-- table order detail -->
 				<table class="table" id="tableOrderDetails">
 					<thead>
@@ -120,7 +154,7 @@
 							<td>Tạ Thảo</td>
 							<td>Lê Văn Lương, Phước Kiểng, Nhà Bè, Hồ Chí Minh</td>
 							<td>250.000</td>
-							<td><a href="#">Detail</a></td>
+							<td><a href="#" data-toggle="modal" data-target="#modalDetails">Detail</a></td>
 							<td>Ordered</td>
 						</tr>
 						<tr class="warning">
@@ -128,7 +162,7 @@
 							<td>Thủy Tiên</td>
 							<td>Lê Văn Lương, Phước Kiểng, Nhà Bè, Hồ Chí Minh</td>
 							<td>150.000</td>
-							<td><a href="#">Detail</a></td>
+							<td><a href="#" data-toggle="modal" data-target="#modalDetails">Detail</a></td>
 							<td>Delivering</td>
 						</tr>
 						<tr class="success">
@@ -136,7 +170,7 @@
 							<td>Jonh Doe</td>
 							<td>100, Bình Thới, Quận 11, Hồ Chí Minh</td>
 							<td>350.000</td>
-							<td><a href="#">Detail</a></td>
+							<td><a href="#" data-toggle="modal" data-target="#modalDetails">Detail</a></td>
 							<td>Done</td>
 						</tr>
 					</tbody>
